@@ -462,7 +462,13 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 >> - Do the CTRL + C in the server ui
 3. > Can I still access the wordpress even if the server is close?
 >> - No you can not, only when the server is open
-3. > Where to access the wordpress dashboard
+4. > Where to access the wordpress dashboard?
 >> - Use your website name/link then add wp-login.php at the end of the file then login Ex.: https://apple-helping-raven.ngrok-free.app/wp-login.php
-3. > Where to access the wordpress dashboard
->> - Use your website name/link then add wp-login.php at the end of the file then login Ex.: https://apple-helping-raven.ngrok-free.app/wp-login.php
+5. > Where to add or change the page?
+>> - Go to the dashboard then top left click the menu on the right or go to the posts tab then either edit an existing post or add a new post
+6. > How to edit?
+>> - Click exiting text/elements at the center to edit the text/element, on the right is the selected element styles or design options and the top left thereis a plus sign to add more elements
+7. > How to save and share the access of the page?
+>> - Publish or Save on the top right of the editor then go back to the editor or click X after publishing then press share button at the top right and copy the link
+8. > Is the access of the website unlimited?
+>> - Actually NO!, It has a limit of 20000 https requests and you can check it at the ngrok website dashboard and in the left column there is a tab named Usage at the bottom
