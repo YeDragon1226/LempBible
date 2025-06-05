@@ -129,20 +129,20 @@ exit
 sudo apt install php-fpm php-mysql php-curl php-mbstring php-imagick php-xml php-zip
 ```
 ## Connecting PHP and Testing Nginx
-P.S All code forward will mostly contain ADD_YOUR_WEBSITE_HERE it must be changed to your website name EX. apple-serving-pegion.ngrok-free.app
-1. > Do this to make a new folder for your website (Change ADD_YOUR_WEBSITE_HERE)
+> P.S All code forward will mostly contain ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png) it must be changed to your website name EX. apple-serving-pegion.ngrok-free.app
+1. > Do this to make a new folder for your website ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo mkdir /var/www/ADD_YOUR_WEBSITE_HERE 
 ```
-2. > To make the folder usable (Change ADD_YOUR_WEBSITE_HERE)
+2. > To make the folder usable ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo chown -R $USER:$USER /var/www/ADD_YOUR_WEBSITE_HERE 
 ```
-3. > To edit nginx (its okay if its red) (Change ADD_YOUR_WEBSITE_HERE)
+3. > To edit nginx (its okay if its red) ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo nano /etc/nginx/sites-available/ADD_YOUR_WEBSITE_HERE
 ```
-4. > Add this inside the file (Change ADD_YOUR_WEBSITE_HERE)
+4. > Add this inside the file ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```nginx
 server {
     listen 80;
@@ -166,7 +166,7 @@ server {
 }
 ```
 5. > To exit do CTRL + X then Press Y then Press Enter
-6. > Link Nginx available to enabled (Change ADD_YOUR_WEBSITE_HERE)
+6. > Link Nginx available to enabled ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo ln -s /etc/nginx/sites-available/ADD_YOUR_WEBSITE_HERE /etc/nginx/sites-enabled/
 ```
@@ -191,7 +191,7 @@ sudo rm /etc/nginx/sites-enabled/<NAME OF FILE>
 ```
 4. >  Redo step 6 and 8-9
 ***
-1. >  It can be in the config file (Change ADD_YOUR_WEBSITE_HERE)
+1. >  It can be in the config file ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo nano /etc/nginx/sites-available/ADD_YOUR_WEBSITE_HERE
 ```
@@ -220,7 +220,7 @@ sudo systemctl reload nginx
 13. > Test the ngrok by visiting the link Ex. "https://apple-helping-raven.ngrok-free.app" in any browser even your phone (ayos lang ne meron pop up something sa link, click lang ang visit website)
 
 ## TESTING PHP SOLELY
-1. > Add a php test file (Its okay if its red) (Change ADD_YOUR_WEBSITE_HERE)
+1. > Add a php test file (Its okay if its red) ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 nano /var/www/ADD_YOUR_WEBSITE_HERE/info.php
 ```
@@ -268,7 +268,7 @@ SELECT * FROM example_database.todo_list;
 ```sql
 exit
 ```
-7. > Add a list test file (Its okay if its red) (Change ADD_YOUR_WEBSITE_HERE)
+7. > Add a list test file (Its okay if its red) ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 nano /var/www/ADD_YOUR_WEBSITE_HERE/list.php
 ```
@@ -307,23 +307,23 @@ curl -O https://wordpress.org/latest.tar.gz
 ```bash
 tar -xvzf latest.tar.gz
 ```
-4. > Move the untar file to the correct folder (Change ADD_YOUR_WEBSITE_HERE)
+4. > Move the untar file to the correct folder ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo mv wordpress /var/www/ADD_YOUR_WEBSITE_HERE/
 ```
-5. > Change the ownership of wordpress (Change ADD_YOUR_WEBSITE_HERE)
+5. > Change the ownership of wordpress ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo chown -R www-data:www-data /var/www/ADD_YOUR_WEBSITE_HERE/wordpress
 ```
-6. > Change the mod of wordpress (Change ADD_YOUR_WEBSITE_HERE)
+6. > Change the mod of wordpress ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo find /var/www/ADD_YOUR_WEBSITE_HERE/wordpress -type d -exec chmod 755 {} \;
 ```
-7. > Change the mod of wordpress (Change ADD_YOUR_WEBSITE_HERE)
+7. > Change the mod of wordpress ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo find /var/www/ADD_YOUR_WEBSITE_HERE/wordpress -type f -exec chmod 644 {} \;
 ```
-8. > Go to wordpress (Change ADD_YOUR_WEBSITE_HERE)
+8. > Go to wordpress ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 cd /var/www/ADD_YOUR_WEBSITE_HERE/wordpress
 ```
@@ -346,7 +346,7 @@ define( 'DB_PASSWORD', 'password' );
 ```bash
 cd ~
 ```
-14. > Add and edit the wordpress for nginx (Change ADD_YOUR_WEBSITE_HERE)
+14. > Add and edit the wordpress for nginx ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```nginx
 server {
     listen 80;
@@ -374,7 +374,7 @@ server {
 ```bash
 sudo ls /etc/nginx/sites-enabled/ 
 ```
-17. > Whatever listed must be deleted like (Change NAME OF FILE)
+17. > Whatever listed must be deleted like ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo rm /etc/nginx/sites-enabled/<NAME OF FILE> 
 ```
@@ -399,7 +399,7 @@ sudo rm /etc/nginx/sites-enabled/<NAME OF FILE>
 ```
 4. >  Redo steps 18-20
 ***
-1. >  It can be in the config file (Change ADD_YOUR_WEBSITE_HERE)
+1. >  It can be in the config file ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo nano /etc/nginx/sites-available/ADD_YOUR_WEBSITE_HERE/wordpress
 ```
@@ -432,7 +432,7 @@ sudo mysql -u root -p
 ```sql
 use wordpress
 ```
-3. > Baguhin ito (Change ADD_YOUR_WEBSITE_HERE)
+3. > Baguhin ito ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```sql 
 UPDATE wp_options SET option_value = 'https://ADD_YOUR_WEBSITE_HERE' WHERE option_name = 'siteurl' OR option_name = 'home';
 ```
@@ -440,7 +440,7 @@ UPDATE wp_options SET option_value = 'https://ADD_YOUR_WEBSITE_HERE' WHERE optio
 ```sql
 exit
 ```
-5. > Last change/edit (Change ADD_YOUR_WEBSITE_HERE)
+5. > Last change/edit ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```bash
 sudo nano /var/www/ADD_YOUR_WEBSITE_HERE/wordpress/wp-config.php
 ```
