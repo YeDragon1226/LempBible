@@ -203,6 +203,10 @@ sudo nano /etc/nginx/sites-available/ADD_YOUR_WEBSITE_HERE
 ```bash
 sudo systemctl reload nginx
 ```
+10.5 > Do this
+```bash
+nano /var/www/domain_name/index.html
+```
 11. > Add and edit (its okay if its red)
 ```html
 <html>
@@ -299,6 +303,18 @@ try {
 ```bash
 cd /tmp
 ```
+1.1 > Add database
+```Bash
+sudo mysql
+```
+```sql
+CREATE DATABASE wordpress;
+CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
 2. > Get the wordpress tar file
 ```bash
 curl -O https://wordpress.org/latest.tar.gz
