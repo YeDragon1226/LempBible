@@ -362,6 +362,10 @@ define( 'DB_PASSWORD', 'password' );
 ```bash
 cd ~
 ```
+13.5 > Open the file
+```bash
+sudo nano /etc/nginx/sites-available/wordpress
+```
 14. > Add and edit the wordpress for nginx ![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)(Change ADD_YOUR_WEBSITE_HERE)![Red](https://img.icons8.com/emoji/48/exclamation-mark-emoji.png)
 ```nginx
 server {
